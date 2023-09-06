@@ -1,2 +1,2 @@
 chmod +x startapp.sh
-/home/ubuntu/code-craft/startapp.sh
+~/Repository/code-craft/startapp.sh

@@ -57,5 +57,5 @@ robot_sample
 robot_my_sample
 
 startapp.sh
-startapplocal.sh
+startapp.sh
 startdocker.sh

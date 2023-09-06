@@ -26,7 +26,7 @@
 - 채팅 기능
 ### 관련 링크
 - http://codecraft.world
-- (영상링크)
+- https://www.youtube.com/watch?v=OD0XJlWmRVs 
 
 <br/>
 
