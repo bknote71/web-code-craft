@@ -18,7 +18,7 @@ const devaddr = 'localhost';
 const addr = process.env.ADDRR;
 const saddr = process.env.SADDRR;
 
-const websocket = new WebSocket(`ws://${saddr}:80/battle/${battleId}`);
+const websocket = new WebSocket(`ws://${saddr}:8080/battle/${battleId}`);
 
 const wsconnectedPromise = new Promise(resolve => {
   // to websocket, 이벤트 핸들러 변경
@@ -102,7 +102,7 @@ export const submitNewCode = (code, specIndex) => {
 
 
 export const requestLeaderBoard = (battleId) => {
-  const url = `http://${saddr}:80/get/leaderboard?battleId=` + battleId;
+  const url = `http://${saddr}:8080/get/leaderboard?battleId=` + battleId;
   return fetch(url, {
     method: 'GET',
   })
@@ -115,7 +115,7 @@ export const requestLeaderBoard = (battleId) => {
 };
 
 export const requestTodayRanking = () => {
-  const url = `http://${saddr}:80/get/today_ranking`;
+  const url = `http://${saddr}:8080/get/today_ranking`;
   fetch(url, {
     method: 'GET',
   })
@@ -128,7 +128,7 @@ export const requestTodayRanking = () => {
 
 function change_code(index, content, lang) {
   compileSidebar.classList.add("open");
-  const url = `http://${saddr}:80/compile/ingame-robot`;
+  const url = `http://${saddr}:8080/compile/ingame-robot`;
   let Data = { robotId: robotId, specIndex: index, code: content, lang: lang }
   console.log(Data)
   const params = new URLSearchParams(Data).toString();
