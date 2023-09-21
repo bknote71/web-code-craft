@@ -45,6 +45,7 @@ public class ClientSessionHandler extends TextWebSocketHandler {
 
     @Override
     public void handleTransportError(WebSocketSession session, Throwable exception) throws Exception {
+        System.out.println("ex? " + exception);
         super.handleTransportError(session, exception);
     }
 
