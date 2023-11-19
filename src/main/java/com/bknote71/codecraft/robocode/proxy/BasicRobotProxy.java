@@ -66,6 +66,7 @@ public class BasicRobotProxy extends RobotProxy implements IBasicRobotPeer {
     }
 
     public void move(double distance) {
+        distance = distance / 1;
         setMoveImpl(distance); // set move 커맨드
         do {
             execute(); // Always tick at least once

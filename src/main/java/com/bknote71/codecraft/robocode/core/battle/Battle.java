@@ -20,7 +20,6 @@ import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
-
 public class Battle {
 
     private static final Logger log = LoggerFactory.getLogger(Battle.class);
@@ -57,7 +56,7 @@ public class Battle {
     }
 
     private void registerTimerTask() {
-        int frame = 20;
+        int frame = 300;
         Timer battleTimer = new Timer();
         battleTimer.schedule(battleTask, 0, 1000 / frame);
     }

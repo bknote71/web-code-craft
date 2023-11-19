@@ -25,8 +25,9 @@
 - 실시간 멀티플레이
 - 채팅 기능
 ### 관련 링크
-- http://codecraft.world
-- https://www.youtube.com/watch?v=OD0XJlWmRVs 
+- http://codecraft.world (비용 문제로 닫음)
+- https://www.youtube.com/watch?v=OD0XJlWmRVs
+- https://www.youtube.com/watch?v=XBmtfgJvN58
 
 <br/>
 
@@ -114,6 +115,9 @@
 
 
 ## 개발환경 셋팅 (플레이 하는법!)
+node version: v16.13.0   
+java version: 17
+
 ```bash
 # git clone
 $ git clone https://github.com/krafton-codeCraft/code-craft.git
